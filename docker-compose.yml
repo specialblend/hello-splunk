@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  splunk:
+    image: splunk/splunk
+    environment:
+      SPLUNK_START_ARGS: --accept-license
+      SPLUNK_PASSWORD: password
+    volumes:
+      - ./opt-splunk-etc:/opt/splunk/etc
+      - /opt/splunk/var
+
+    ports:
+      - "8000:8000"
+      - "9997:9997"
+      - "8088:8088"
+      - "1514:1514"
