@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "true",
-    "start:splunk": "docker-compose up",
-    "start:flog": "docker run -it --rm mingrammer/flog -l | tee -a logs/example.log",
-    "start": "npm run start:flog & npm run start:splunk"
+    "start": "docker-compose up"
   },
   "repository": {
     "type": "git",
