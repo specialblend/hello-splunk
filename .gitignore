@@ -1,0 +1,6 @@
+*
+
+!.gitignore
+!docker-compose.yml
+!package.json
+!opt-splunk-etc/splunk-launch.conf

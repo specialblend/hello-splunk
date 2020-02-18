@@ -1,6 +1,7 @@
 version: '3.5'
 
 services:
+
   splunk:
     image: splunk/splunk
     environment:
@@ -9,6 +10,7 @@ services:
     volumes:
       - ./opt-splunk-etc:/opt/splunk/etc
       - /opt/splunk/var
+      - ./logs:/var/log/
 
     ports:
       - "8000:8000"

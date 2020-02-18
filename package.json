@@ -1,0 +1,22 @@
+{
+  "name": "docker-compose-splunk",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "true",
+    "start:splunk": "docker-compose up",
+    "start:flog": "docker run -it --rm mingrammer/flog -l | tee -a logs/example.log",
+    "start": "npm run start:flog & npm run start:splunk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specialblend/docker-compose-splunk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/specialblend/docker-compose-splunk/issues"
+  },
+  "homepage": "https://github.com/specialblend/docker-compose-splunk#readme"
+}
