@@ -1,7 +1,7 @@
 {
-  "name": "docker-compose-splunk",
+  "name": "hello-splunk",
   "version": "0.0.0",
-  "description": "",
+  "description": "docker-compose config for splunk local development, with test log generation",
   "main": "index.js",
   "scripts": {
     "test": "true",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/specialblend/docker-compose-splunk.git"
+    "url": "git+https://github.com/specialblend/hello-splunk.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/specialblend/docker-compose-splunk/issues"
+    "url": "https://github.com/specialblend/hello-splunk/issues"
   },
-  "homepage": "https://github.com/specialblend/docker-compose-splunk#readme"
+  "homepage": "https://github.com/specialblend/hello-splunk#readme"
 }
