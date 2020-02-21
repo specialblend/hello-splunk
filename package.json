@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "true",
-    "start": "docker-compose up"
+    "prestart:splunk": "mkdir -p logs",
+    "start:splunk": "docker-compose up",
+    "start:logs": "bin/generate-logs.sh",
+    "postinstall": "chmod -R +x bin"
   },
   "repository": {
     "type": "git",
