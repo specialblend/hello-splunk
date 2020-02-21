@@ -6,9 +6,11 @@
   "scripts": {
     "test": "true",
     "prestart:splunk": "mkdir -p logs",
+    "postinstall": "chmod -R +x bin",
     "start:splunk": "docker-compose up",
     "start:logs": "bin/generate-logs.sh",
-    "postinstall": "chmod -R +x bin"
+    "start": "npm run start:splunk",
+    "start:tmux": "tmux new-session -d npm run start:splunk \\; split-window npm run start:logs \\; attach "
   },
   "repository": {
     "type": "git",
